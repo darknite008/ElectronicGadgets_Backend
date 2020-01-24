@@ -1,13 +1,14 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
-const taskRouter = require("./routes/tasks");
-
-const userRouter = require("./routes/users");
 const dotenv = require("dotenv").config();
+const cors = require("cors");
+
+const productRouter = require("./routes/productRoutes");
+const taskRouter = require("./routes/tasks");
+const userRouter = require("./routes/users");
 const uploadRouter = require("./routes/upload");
 const auth = require("./auth");
-const cors = require("cors");
 
 const app = express();
 
@@ -33,8 +34,10 @@ mongoose
 
 app.use("/users", userRouter);
 app.use("/upload", uploadRouter);
-app.use(auth.verifyUser);
+app.use("/products", productRouter);
+
 //app.use("/categories", categoryRouter);
+app.use(auth.verifyUser);
 app.use("/feedback", taskRouter);
 
 app.use((err, req, res, next) => {

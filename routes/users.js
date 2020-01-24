@@ -4,6 +4,7 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/users");
 const router = express.Router();
 const auth = require("../auth");
+//const Product = require("../models/productModel");
 
 router.post("/signup", (req, res, next) => {
   let password = req.body.password;

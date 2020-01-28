@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --ignore ./public/uploads index.js",
-    "test": "jest --coverage"
+    "test": "jest --watchAll"
   },
   "author": "Om Krishna Thapa",
   "license": "ISC",

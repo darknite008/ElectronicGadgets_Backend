@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1580061930810" clover="3.2.0">
-  <project timestamp="1580061930810" name="All files">
+<coverage generated="1580062856710" clover="3.2.0">
+  <project timestamp="1580062856731" name="All files">
     <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="10" coveredelements="10" complexity="0" loc="10" ncloc="10" packages="1" files="3" classes="3"/>
     <file name="productModel.js" path="D:\LAST YEAR\Final WebApi Project\ElectronicGadgets_Backend\models\productModel.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

@@ -15,7 +15,8 @@ const productSchema = new mongoose.Schema(
     },
 
     productratings: {
-      type: String
+      type: String,
+      maxlength: 5
     },
 
     productimage: {

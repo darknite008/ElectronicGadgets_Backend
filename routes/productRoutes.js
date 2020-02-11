@@ -47,7 +47,7 @@ router
   });
 
 router
-  .route("/id")
+  .route("/:id")
   .get((req, res, next) => {
     Products.findById(req.params.id)
       .then(
@@ -67,7 +67,7 @@ router
   .put((req, res, next) => {
     Products.findByIdAndUpdate(
       req.params.id,
-      { set: req.body },
+      { productname: req.body.pname, productprice: req.body.pprice },
       { new: true, useFindAndModefy: false }
     )
       .then(

@@ -11,7 +11,7 @@ const uploadRouter = require("./routes/upload");
 const auth = require("./auth");
 
 const app = express();
-
+app.use(cors());
 app.use(morgan("tiny"));
 app.use(express.json());
 app.options("*", cors());
